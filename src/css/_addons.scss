@@ -1,0 +1,80 @@
+.addons {
+
+}
+.addon {
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+
+  &:hover, &.selected {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
+  }
+  &.selected {
+    .checkbox {
+      border-color: hsl(243, 100%, 62%);
+      background-color: hsl(243, 100%, 62%);
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+  p {
+    margin: 0;
+    text-align: left;
+  }
+
+  .checkbox {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+    border: 2px solid lightgray;
+    img {
+      transform: translateX(2px) translateY(-2px);
+    }
+
+  }
+  .price {
+    margin-left: auto;
+    color: hsl(243, 100%, 62%);
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    margin-right: 20px !important;
+  }
+  .addons {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .addon {
+    h1 {
+      font-size: 14px;
+      text-align: left;
+    }
+    p {
+      font-size: 12px;
+    }
+    font-size: 12px !important;
+    width: 250px;
+  }
+  .checkbox {
+    img {
+      transform: translateX(0) translateY(1px) !important;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .addon {
+    padding: 10px 0;
+  }
+}

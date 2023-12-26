@@ -1,0 +1,86 @@
+.container {
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.header {
+  border-radius: 12px;
+  width: 274px;
+  margin: 20px;
+  background-image: url("../../public/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .step-container {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+    .step-link {
+      text-decoration: none;
+      padding: 7px 12px;
+      color: white;
+      border: 2px solid white;
+      border-radius: 50%;
+      font-family: UbuntuBold;
+      margin: 30px 30px;
+
+      &:hover, &.active {
+        background-color: hsl(206, 94%, 87%);
+        color: hsl(213, 96%, 18%);
+        border-color: transparent;
+      }
+    }
+
+    .step-infos {
+      color: white;
+
+      p {
+        opacity: .7;
+        margin: 0 0 5px 0;
+      }
+      h1 {
+        margin: 0;
+        font-family: UbuntuBold;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .header {
+    background-image: url("../../public/images/bg-sidebar-mobile.svg");
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  .container {
+    flex-direction: column;
+    background-color: hsl(217, 100%, 97%);
+    justify-content: start;
+  }
+  .navbar {
+    min-height: 45vw;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: start;
+    padding-top: 5vw;
+
+    .step-infos {
+      display: none;
+    }
+    .step-link {
+      margin: 20px 10px 0 10px !important;
+    }
+  }
+}

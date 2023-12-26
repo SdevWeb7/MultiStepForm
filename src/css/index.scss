@@ -1,0 +1,30 @@
+@import "fonts";
+@import "navbar";
+@import "content";
+@import "step2";
+@import "addons";
+@import "step4";
+@import "step5";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+body {
+  background-color: hsl(217, 100%, 97%);
+}
+
+.style-guide {
+  color: hsl(213, 96%, 18%);
+  color: hsl(243, 100%, 62%);
+  color: hsl(228, 100%, 84%);
+  color: hsl(206, 94%, 87%);
+  color: hsl(354, 84%, 57%);
+  color: hsl(231, 11%, 63%);
+  color: hsl(229, 24%, 87%);
+  color: hsl(217, 100%, 97%);
+  color: hsl(231, 100%, 99%);
+  color: hsl(0, 0%, 100%);
+}

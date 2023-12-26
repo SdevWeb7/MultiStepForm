@@ -1,0 +1,47 @@
+.recap {
+  background-color: hsl(231, 100%, 99%);
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+
+  .plans-recap {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 22px;
+      a {
+        font-size: 16px;
+        color: hsl(231, 11%, 63%);
+        font-family: Ubuntu;
+        font-weight: 400;
+      }
+      span {
+        display: block;
+        margin-top: 5px;
+      }
+    }
+    p {
+      color: hsl(213, 96%, 18%);
+      font-family: UbuntuBold;
+    }
+  }
+}
+
+.addon-recap {
+  display: flex;
+  justify-content: space-between;
+}
+.total-recap {
+  display: flex;
+  justify-content: space-between;
+
+  .total-blue {
+    color: blue;
+    font-family: UbuntuBold;
+    font-size: 18px;
+  }
+}
